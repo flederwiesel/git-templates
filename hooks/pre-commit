@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -e
+
+# Read user input, assign stdin to keyboard
+exec < /dev/tty
+
+read -p $'\033[1;37mPlease specify which user is allowed to commit:\033[m ' username
+
+export username="${username:-nobody}"
+
+"$0.user"
+
+sed 's/\$username/'"$username"'/' "$0.user" > "$0"
