@@ -14,7 +14,7 @@ herein are copied to the repo structure.
 
 <dl>
 	<dt>hooks/pre-commit</dt>
-		<dd>Enforces a username - setup upon first commit - to be enforced on copmmits.</dd>
+		<dd>Enforces a username - setup upon first commit - to be enforced on commits.</dd>
 	<dt>hooks/pre-commit.user</dt>
 		<dd>Used as template for for hooks/pre-commit</dd>
 </dl>
