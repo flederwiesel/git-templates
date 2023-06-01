@@ -1,7 +1,7 @@
 #!/bin/bash
 
-[[ $(git config user.name) == $username ]] ||
+[[ $(git config user.name) == "$username" ]] ||
 {
-	echo -e "\033[31mOnly $username is allowed to commit to this repo.\033[m" >&2
+	echo -e "\033[31mOnly "$username" is allowed to commit to this repo.\033[m" >&2
 	exit 1
 }

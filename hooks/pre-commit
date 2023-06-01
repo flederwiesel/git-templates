@@ -11,4 +11,4 @@ export username="${username:-nobody}"
 
 "$0.user"
 
-sed 's/\$username/'"$username"'/' "$0.user" > "$0"
+sed 's/"\$username"/"'"$username"'"/' "$0.user" > "$0"
